@@ -1,17 +1,50 @@
-import Head from 'next/head'
-
-export default function DownloadPage() {
-  return (
-    <div>
-      <Head>
-        <title>Download Page</title>
-        <meta name="description" content="Download tools and resources" />
-      </Head>
-      <main>
-        <h1>Download Tools</h1>
-        <p>Here you can find useful tools and resources.</p>
-        <a href="/path-to-your-file.zip" download>Download File</a>
-      </main>
-    </div>
-  )
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Download Tools</h1>
+    <p>Click the button below to download the resources.</p>
+    <a href="/path-to-your-file.zip" download>Download File</a>
+  </div>
+</body>
+</html>
